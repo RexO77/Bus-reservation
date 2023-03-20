@@ -1,8 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<malloc.h>
 #include<string.h>
-#include <unistd.h>
+#include<unistd.h>
 #define size 5
 # define MAX_SIZE 20
 
@@ -17,11 +16,11 @@ typedef struct NODE
 } node;
 
 node* deq();
-void create();
+void create();//Nithya 
 int reserve();
-int cancel(int);
+int cancel(int);//Prathik
 void enq(node*);
-void display();
+void display();//Pratham
 
 
 node *start;
@@ -72,11 +71,11 @@ int reserve()
 		printf("Age : ");
 		scanf("%d", &(new_node->age));
         printf("Date Of Travel : ");
-        scanf("%s", start->Date);
+        scanf("%s", new_node->Date);
         printf("Enter the Starting Point  : ");
-        scanf("%s", start->from);
+        scanf("%s", new_node->from);
         printf("Enter Destination : ");
-        scanf("%s", start->to);
+        scanf("%s", new_node->to);
         printf("Reservation in Process.....");
         sleep(5);
 
